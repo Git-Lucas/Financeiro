@@ -1,6 +1,6 @@
-﻿using Financeiro.Core.Domain.ParceirosComerciais.Models;
+﻿using Financeiro.Domain.ParceirosComerciais.Models;
 
-namespace Financeiro.Core.Domain.Despesas.Models;
+namespace Financeiro.Domain.Despesas.Models;
 public class Despesa
 {
     public Guid Id => Guid.NewGuid();

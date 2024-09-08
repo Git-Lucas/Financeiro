@@ -1,6 +1,6 @@
-﻿using Financeiro.Core.Application.Data;
-using Financeiro.Core.Domain.Despesas.Models;
-using Financeiro.Core.Domain.ParceirosComerciais.Models;
+﻿using Financeiro.Domain.Despesas.Models;
+using Financeiro.Domain.Interfaces.Data;
+using Financeiro.Domain.ParceirosComerciais.Models;
 
 namespace Financeiro.Infrastructure.Data;
 public class DespesasRepositoryMemory : IDespesasRepository

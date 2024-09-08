@@ -1,12 +1,9 @@
-﻿using Financeiro.ConsoleApp;
-using Financeiro.Core.Application.Data;
-using Financeiro.Core.Application.UseCases.DespesasPorPeriodo;
-using Financeiro.Core.Application.UseCases.DespesasPorPeriodo.DTOs;
-using Financeiro.Core.Domain.Despesas.Models;
-using Financeiro.Infrastructure.Data;
+﻿using Financeiro.Application.UseCases.DespesasPorPeriodo;
+using Financeiro.Application.UseCases.DespesasPorPeriodo.DTOs;
+using Financeiro.ConsoleApp;
+using Financeiro.Domain.Despesas.Models;
 
-IDespesasRepository despesasRepository = new DespesasRepositoryMemory();
-RecuperarDespesasPorPeriodo recuperarDespesasPorPeriodo = new(despesasRepository);
+RecuperarDespesasPorPeriodo recuperarDespesasPorPeriodo = new();
 
 RecuperarDespesasPorPeriodoRequisicao requisicao = new(02, 2023);
 IEnumerable<Despesa> despesasFiltradas = await recuperarDespesasPorPeriodo.ExecuteAsync(requisicao);

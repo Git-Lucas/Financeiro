@@ -1,4 +1,4 @@
-﻿namespace Financeiro.Core.Domain.ParceirosComerciais.Models;
+﻿namespace Financeiro.Domain.ParceirosComerciais.Models;
 public class ParceiroComercial
 {
     public Guid Id => Guid.NewGuid();
