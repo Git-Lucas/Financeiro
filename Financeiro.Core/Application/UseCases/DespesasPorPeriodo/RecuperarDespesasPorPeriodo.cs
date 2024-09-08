@@ -9,6 +9,6 @@ public class RecuperarDespesasPorPeriodo(IDespesasRepository despesasRepository)
 
     public async Task<IEnumerable<Despesa>> ExecuteAsync(RecuperarDespesasPorPeriodoRequisicao requisicao)
     {
-        return await _despesasRepository.RecuperarDespesasPorPeriodoAsync(requisicao.Mes, requisicao.Ano);
+        return await _despesasRepository.RecuperarDespesasPorPeriodoVencimentoAsync(requisicao.Mes, requisicao.Ano);
     }
 }

@@ -3,5 +3,5 @@
 namespace Financeiro.Core.Application.Data;
 public interface IDespesasRepository
 {
-    Task<IEnumerable<Despesa>> RecuperarDespesasPorPeriodoAsync(int mes, int ano);
+    Task<IEnumerable<Despesa>> RecuperarDespesasPorPeriodoVencimentoAsync(int mes, int ano);
 }
