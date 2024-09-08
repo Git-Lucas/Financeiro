@@ -1,6 +1,6 @@
-﻿using Financeiro.Core.Domain.Despesas.Models;
+﻿using Financeiro.Domain.Despesas.Models;
 
-namespace Financeiro.Core.Application.Data;
+namespace Financeiro.Domain.Interfaces.Data;
 public interface IDespesasRepository
 {
     Task<IEnumerable<Despesa>> RecuperarDespesasPorPeriodoVencimentoAsync(int mes, int ano);
