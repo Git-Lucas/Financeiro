@@ -10,7 +10,6 @@ Console.WriteLine($"2 - Versão 2 (versão obrigatória a partir de {DateTime.No
 
 string? selectedEfdReinfVersion = Console.ReadLine();
 IEfdReinf efdReinf = GetEfdReinf(selectedEfdReinfVersion);
-
 EnviarR2020 enviarR2020 = new(efdReinf);
 
 EnviarR2020Requisicao requisicao = new(02, 2023);
