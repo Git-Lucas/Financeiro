@@ -1,5 +1,5 @@
-﻿using Financeiro.Domain.Despesas.Models;
-using Financeiro.Domain.Interfaces.Data;
+﻿using Financeiro.Domain.Data.Interfaces;
+using Financeiro.Domain.Despesas.Models;
 using Financeiro.Domain.ParceirosComerciais.Models;
 
 namespace Financeiro.Infrastructure.Data;

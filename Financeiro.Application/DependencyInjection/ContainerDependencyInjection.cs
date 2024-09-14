@@ -1,4 +1,4 @@
-﻿using Financeiro.Domain.Interfaces.Data;
+﻿using Financeiro.Domain.Data.Interfaces;
 using Financeiro.Infrastructure.Data;
 
 namespace Financeiro.Application.DependencyInjection;

@@ -1,4 +1,4 @@
 ﻿namespace Financeiro.Application.UseCases.DespesasPorPeriodo.DTOs;
-public record RecuperarDespesasPorPeriodoRequisicao(int Mes, int Ano)
+public record EnviarR2020Requisicao(int Mes, int Ano)
 {
 }
