@@ -1,9 +1,11 @@
 ﻿using Financeiro.Domain.Despesas.Models;
 using Financeiro.Domain.EfdReinf.DTOs;
 using Financeiro.Domain.EfdReinf.Interfaces;
+using Financeiro.EfdReinf.Leiautes;
+using Financeiro.EfdReinf.Utils;
 using System.Xml;
 
-namespace Financeiro.EfdReinf;
+namespace Financeiro.EfdReinf.WebServices;
 public class EfdReinfV1 : IEfdReinf
 {
     private readonly LeiauteEfdReinfV1 _leiauteEfdReinf = new();
@@ -16,16 +18,10 @@ public class EfdReinfV1 : IEfdReinf
 
             XmlDocument xmlRequisicao = _leiauteEfdReinf.GerarR2020Requisicao(despesasFiltradas);
 
-            LogInformation(uri, xmlRequisicao);
+            LogInformation.EnvioLote(uri, xmlRequisicao);
 
             EnviarR2020Resposta respostaWebService = new(StatusResposta.Sucesso, new XmlDocument());
             return respostaWebService;
         });
-    }
-
-    private static void LogInformation(Uri uri, XmlDocument xmlRequisicao)
-    {
-        Console.WriteLine($"LOGGER APPLICATION: URL to request: {uri}");
-        Console.WriteLine($"\r\nLOGGER APPLICATION: XML de requisição: {xmlRequisicao.ToIndentedString()}");
     }
 }

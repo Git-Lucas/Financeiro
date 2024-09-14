@@ -1,7 +1,7 @@
 ﻿using Financeiro.Domain.Despesas.Models;
 using System.Xml;
 
-namespace Financeiro.EfdReinf;
+namespace Financeiro.EfdReinf.Leiautes;
 public class LeiauteEfdReinfV1 : ILeiauteEfdReinf
 {
     public XmlDocument GerarR2020Requisicao(IEnumerable<Despesa> despesasFiltradas)
