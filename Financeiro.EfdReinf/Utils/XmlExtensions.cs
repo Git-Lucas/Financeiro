@@ -1,6 +1,6 @@
 ﻿using System.Xml;
 
-namespace Financeiro.EfdReinf;
+namespace Financeiro.EfdReinf.Utils;
 public static class XmlExtensions
 {
     public static string ToIndentedString(this XmlDocument xmlDocument)
@@ -11,7 +11,7 @@ public static class XmlExtensions
         {
             Indent = true,
             IndentChars = "  ",
-            NewLineChars = "\r\n", 
+            NewLineChars = "\r\n",
             NewLineHandling = NewLineHandling.Replace
         };
 
