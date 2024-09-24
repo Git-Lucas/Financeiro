@@ -1,5 +1,4 @@
-﻿using Financeiro.Application.UseCases.DespesasPorPeriodo.DTOs;
-using Financeiro.Application.UseCases.R_2020;
+﻿using Financeiro.Application.UseCases;
 using Financeiro.Domain.EfdReinf.DTOs;
 using Financeiro.Domain.EfdReinf.Interfaces;
 using Financeiro.EfdReinf.WebServices;
