@@ -1,11 +1,10 @@
 ﻿using Financeiro.Application.DependencyInjection;
-using Financeiro.Application.UseCases.DespesasPorPeriodo.DTOs;
 using Financeiro.Domain.Data.Interfaces;
 using Financeiro.Domain.Despesas.Models;
 using Financeiro.Domain.EfdReinf.DTOs;
 using Financeiro.Domain.EfdReinf.Interfaces;
 
-namespace Financeiro.Application.UseCases.R_2020;
+namespace Financeiro.Application.UseCases;
 public class EnviarR2020(IEfdReinf efdReinf)
 {
     private readonly IDespesasRepository _despesasRepository = ContainerDependencyInjection.DespesasRepository;
@@ -19,4 +18,8 @@ public class EnviarR2020(IEfdReinf efdReinf)
 
         return efdReinfResposta;
     }
+}
+
+public record EnviarR2020Requisicao(int Mes, int Ano)
+{
 }
