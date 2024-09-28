@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Financeiro.Application\Financeiro.Application.csproj" />
+    <ProjectReference Include="..\Financeiro.EfdReinf\Financeiro.EfdReinf.csproj" />
   </ItemGroup>
 
 </Project>
