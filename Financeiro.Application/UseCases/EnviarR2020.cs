@@ -1,13 +1,12 @@
-﻿using Financeiro.Application.DependencyInjection;
-using Financeiro.Domain.Data.Interfaces;
+﻿using Financeiro.Domain.Data.Interfaces;
 using Financeiro.Domain.Despesas.Models;
 using Financeiro.Domain.EfdReinf.DTOs;
 using Financeiro.Domain.EfdReinf.Interfaces;
 
 namespace Financeiro.Application.UseCases;
-public class EnviarR2020(IEfdReinf efdReinf)
+public class EnviarR2020(IDespesasRepository despesasRepository, IEfdReinf efdReinf)
 {
-    private readonly IDespesasRepository _despesasRepository = ContainerDependencyInjection.DespesasRepository;
+    private readonly IDespesasRepository _despesasRepository = despesasRepository;
     private readonly IEfdReinf _efdReinf = efdReinf;
 
     public async Task<EnviarR2020Resposta> ExecuteAsync(EnviarR2020Requisicao requisicao)
