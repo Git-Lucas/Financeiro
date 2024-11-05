@@ -6,7 +6,7 @@ using Financeiro.EfdReinf.Utils;
 using System.Xml;
 
 namespace Financeiro.EfdReinf.WebServices;
-public class EfdReinfV1 : IEfdReinf
+internal class EfdReinfV1 : IEfdReinf
 {
     private readonly LeiauteEfdReinfV1 _leiauteEfdReinf = new();
 

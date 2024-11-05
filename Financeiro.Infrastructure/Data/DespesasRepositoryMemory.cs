@@ -3,7 +3,7 @@ using Financeiro.Domain.Despesas.Models;
 using Financeiro.Domain.ParceirosComerciais.Models;
 
 namespace Financeiro.Infrastructure.Data;
-public class DespesasRepositoryMemory : IDespesasRepository
+internal class DespesasRepositoryMemory : IDespesasRepository
 {
     private readonly IEnumerable<Despesa> _despesas =
     [

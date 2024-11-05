@@ -2,7 +2,7 @@
 using System.Xml;
 
 namespace Financeiro.EfdReinf.Leiautes;
-public class LeiauteEfdReinfV1 : ILeiauteEfdReinf
+internal class LeiauteEfdReinfV1 : ILeiauteEfdReinf
 {
     public XmlDocument GerarR2020Requisicao(IEnumerable<Despesa> despesasFiltradas)
     {
