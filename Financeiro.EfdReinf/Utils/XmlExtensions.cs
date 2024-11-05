@@ -1,7 +1,7 @@
 ﻿using System.Xml;
 
 namespace Financeiro.EfdReinf.Utils;
-public static class XmlExtensions
+internal static class XmlExtensions
 {
     public static string ToIndentedString(this XmlDocument xmlDocument)
     {
